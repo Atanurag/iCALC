@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+<style>
+	.as{border-radius: 8px;
+		background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT8JIq4pnIQ4tMcU_W7pNKDiee0JpzzYcyuQ&usqp=CAU);
+		margin: auto;
+		position: relative;
+		border: 2px solid black;
+    width:350px;
+   height:255px;
+
+
+	}
+	#st{
+	background-color: #fff714;
+		font-size: 12px;
+text-align: center;
+
+border-radius: 12px ;
+		top:13px;
+		left: 55px;
+		position: absolute;
+border: 2px solid black;
+		height: 26px;
+    width: 45px;
+	}
+	#mid{
+		background-color: #bce3e2;
+font-size: 15px;
+text-align: center;
+
+border-radius: 12px ;
+		left:150px;
+		top:79px;
+		position: absolute;
+border: 2px solid black;
+		height: 26px;
+    width: 45px;
+
+	}
+	#nd{
+
+		background-color: #fff714;
+		font-size: 12px;
+text-align: center;
+		border-radius: 12px ;
+		top:13px;
+		left: 236px;
+		position: absolute;
+        border: 2px solid black;
+		height: 26px;
+    width: 45px;
+	}
+	.btn{
+		background-color:#00c7a2;
+border-radius: 10px;
+		top:190px;
+		left:147px;
+		position: absolute;
+       width:51px;
+       height:32px;
+
+	}
+	.clebtn{
+		font-size: 18px;
+		font-family: Copperplate, Papyrus, fantasy;
+background-color:#76f013;
+border-radius: 10px;
+		top: 256px;
+    left: 303px;
+		position: absolute;
+       width:51px;
+       height:32px;
+
+	}
+	.btn:hover{
+
+background-color:#19ffaf;
+
+	}
+	.side{
+
+border: 2px solid coral;
+    top: 127px;
+    left: 1px;
+    position: absolute;
+    height: 67px;
+    width: 9px;
+    background-color: orange;
+    border-radius: 28px;
+}
+	#pa{
+font-weight: bold;
+		font-size: 18px;
+    font-family: Copperplate, Papyrus, fantasy;
+    top: 123px;
+    left: 15px;
+    position: absolute;
+    height: 50px;
+	}
+	
+	
+</style>
+
+</head>
+<body>
+
+
+
+<div class="as">
+	<input  type="text" id="st" placeholder="1st num"/>
+
+
+<input id="mid" type="num" placeholder="oper" >
+
+	<input id="nd" type="text" placeholder="2nd num"/>
+
+	<div class="side">
+		
+	</div>
+	<p id='pa'></p>
+ 
+ <button class="btn" onclick="getInputValue()">CALC</button>
+
+
+ <button class="clebtn" onclick="clebtnee()">clear</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script> 
+
+
+
+
+
+
+	
+
+	
+	//let w=document.getElementById('st').value;
+
+
+
+
+
+
+
+
+ function getInputValue(){
+            
+            var w = parseInt
+            (document.getElementById("st").value);
+            let e=parseInt(document.getElementById('nd').value);
+            let t=	document.getElementById('mid').value;
+
+
+            if(t=="+"){
+	
+var qq=w+e;
+ document.getElementById('pa').innerHTML="ans is " +qq;
+
+           // alert(w+e);}
+        }
+	 else if(t=="-"){
+	
+var qq=w-e;
+ document.getElementById('pa').innerHTML="ans is " +qq;
+
+           // alert(w+e);}
+        }
+
+        else if(t=="*"){
+	
+var qq=w*e;
+ document.getElementById('pa').innerHTML="ans is " +qq;
+
+           // alert(w+e);}
+        }
+
+
+else if(t=="/"){
+	
+var qq=e/w;
+ document.getElementById('pa').innerHTML="ans is " +qq;	
+
+           // alert(w+e);}
+        }
+       else if(t=="%"){
+	
+var qq=e%w;
+ document.getElementById('pa').innerHTML="ans is " +qq;
+
+           // alert(w+e);}
+        }
+
+
+else{
+
+	document.getElementById('pa').innerHTML=" &#10006;OOps their is<br>a problem " ;
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+function clebtnee(){
+
+	window.location.reload(true);
+}
+
+
+
+
+/*
+
+function clebtn() {
+	
+            var y1=document.getElementById("st").value.clear();
+
+var y2=document.getElementById("nd").value.remove();
+var y3=document.getElementById("mid").value.remove();
+
+
+ var y4=document.getElementById('pa').innerHTML=" ";
+//return y1,y2,y3,y4;
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	//var j=parseInt(prompt("hh"));
+
+ //let r=document.getElementById('nd').innerHTML=j;
+
+
+
+
+
+
+	//var k=prompt("hh");
+//
+
+//let aa=[u,r,t];
+
+
+
+
+//for(let i=0;i<3;i++){
+
+	//console.log(aa[i]);
+//}
+
+
+
+/*function uuuu() {
+	console.log(this.aa[2]=aa[2]);
+}
+
+let yy=u+r;
+
+document.getElementById('pa').innerHTML="Ans  you got is </br>"+yy;
+
+
+*/
+
+
+
+
+
+
+
+
+
+/*
+if(t == '+') {
+function kk() {
+	
+	this.u=u;
+	this.r=r;
+	return u+r;
+}
+}if(t == '-') {
+function kk() {
+	
+	this.u=u;
+	this.r=r;
+	return u-r;
+}
+}
+
+document.getElementById('pa').innerHTML=kk();
+console.log(kk());*/
+
+//var t=prompt("e");
+//var r='+';
+//console.log(t==r);*/
+
+
+
+
+</script>
+	
+</body>
+</html>
